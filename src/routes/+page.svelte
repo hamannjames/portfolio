@@ -9,7 +9,14 @@
     import { fade, fly, slide } from 'svelte/transition';
     import RevealContainer from '$lib/components/RevealContainer.svelte';
     import Games from './Games.svelte';
-    const bgGlob = import.meta.glob('$lib/images/backgrounds/*', {eager: true});
+
+    import spaceNeedle from "$lib/images/backgrounds/andrea-leopardi-GV8eF1jJpSs-unsplash.webp";
+    import pikePlace from "$lib/images/backgrounds/ben-dutton-16ziVZtz8vA-unsplash.webp"
+    import rock from "$lib/images/backgrounds/lauren-pandolfi-sbymMSXYHvo-unsplash.webp";
+    import skyline from "$lib/images/backgrounds/ryan-wilson-HkF6feHrGBE-unsplash.webp";
+    import cc from "$lib/images/backgrounds/towfiqu-barbhuiya-HNPrWOH2Z8U-unsplash.webp";
+
+    const images = [spaceNeedle, pikePlace, rock, skyline, cc]
 </script>
 
 <svelte:head>
@@ -20,7 +27,7 @@
 <div class="bg-black flex flex-col gap-y-12">
     <section>
         <div class="flex bg-black width-vw flex-1 h-screen justify-end items-end">
-            <TextOverBackgrounds text='James Hamann' backgrounds={Object.keys(bgGlob)}/>
+            <TextOverBackgrounds text='James Hamann' backgrounds={images}/>
         </div>
         <RevealContainer theTransition={fly} className="text-center mt-8">
             <h2 transition:fly={{y: '20vh'}} class="text-4xl">Developer. Designer. Friend.</h2>
