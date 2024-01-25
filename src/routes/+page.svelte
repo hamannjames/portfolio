@@ -26,7 +26,7 @@
 
 <div class="bg-black flex flex-col gap-y-12">
     <section>
-        <div class="flex bg-black width-vw flex-1 h-screen justify-end items-end">
+        <div class="flex bg-black width-vw flex-1 h-screen justify-end items-end px-2">
             <TextOverBackgrounds text='James Hamann' backgrounds={images}/>
         </div>
         <RevealContainer theTransition={fly} className="text-center mt-8">
