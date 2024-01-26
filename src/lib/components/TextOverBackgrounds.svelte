@@ -20,9 +20,9 @@
 <div class="text uppercase bg-black relative">
     {#each textArray as word }
         <div class="block">
-        {#each word as char }
+        {#each word as char, i }
             {#if char.match(/[a-z]/i)}
-                <CharBg initial={getRandomBackground()} available={backgrounds} char={char} />
+                <CharBg seconds={Math.random() * 15} initial={getRandomBackground()} available={backgrounds} char={char} />
             {:else}
                 {char}
             {/if}

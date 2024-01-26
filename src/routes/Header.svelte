@@ -2,6 +2,8 @@
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
+	import linkedin from '$lib/images/linkedin.svg';
+	import email from '$lib/images/email.svg';
 </script>
 
 <header class="fixed z-30">
@@ -10,14 +12,25 @@
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
-		<ul>
+		<ul class="space-x-0 md:space-x-2">
 			<li>
+				<a href="mailto:hamannjames87@gmail.com">
+					<img alt="email me" src={email} />
+				</a>
+			</li>
+			<li class="hidden md:block">
 				<a href="mailto:hamannjames87@gmail.com">hamannjames87@gmail.com</a>
 			</li>
 			<li class="corner">
 				<a href="https://github.com/hamannjames">
 					<img src={github} alt="GitHub" />
 				</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/hamannjames/"><img src="{linkedin}" alt="Linked In"/></a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/hamannjames/">#OpenToWork</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">

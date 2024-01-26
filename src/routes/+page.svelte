@@ -10,7 +10,7 @@
     import RevealContainer from '$lib/components/RevealContainer.svelte';
     import Games from './Games.svelte';
 
-    import spaceNeedle from "$lib/images/backgrounds/andrea-leopardi-GV8eF1jJpSs-unsplash.webp";
+    import spaceNeedle from "$lib/images/backgrounds/damien-robin-Ef7YlDOVTZw-unsplash.webp";
     import pikePlace from "$lib/images/backgrounds/ben-dutton-16ziVZtz8vA-unsplash.webp"
     import rock from "$lib/images/backgrounds/lauren-pandolfi-sbymMSXYHvo-unsplash.webp";
     import skyline from "$lib/images/backgrounds/ryan-wilson-HkF6feHrGBE-unsplash.webp";

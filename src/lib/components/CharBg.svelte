@@ -1,31 +1,35 @@
 <script>
+  import { onMount } from "svelte";
+  import { fade } from "svelte/transition";
+
     export let initial = '';
     export let available = [];
     export let char = '';
+    export let seconds = 0;
 
-    let show = '';
+    let show = false;
 
-    const getRandomBackground = () => {
-        let path = available[Math.floor(Math.random() * available.length)];
-
-        while (path === show) {
-            path = available[Math.floor(Math.random() * available.length)];
-        }
-
-        show = available[Math.floor(Math.random() * available.length)];
-    }
-
-    show = initial || getRandomBackground();
+    onMount(() => {
+        setTimeout(() => show = true, seconds * 100)
+        setInterval(() => {
+            initial = available[Math.floor(Math.random() * (available.length - 1))]
+        }, 5000 + seconds * 100)
+    })
 </script>
 
-
-<div class="inline-block relative" on:mouseenter={getRandomBackground} role="presentation">
-    <div class="absolute top-0 left-0 z-0 w-full h-full background-center" style="background-image: url('{show}')"></div>
+<div class="inline-block relative" role="presentation">
+    {#if show}
+        <div transition:fade={{duration: 1000}} class="image absolute top-0 left-0 z-0 w-full h-full" style="background-image: url('{initial}')"></div>
+    {/if}
     <div class="bg-black relative mix-blend-darken">{char}</div>
 </div>
 
 <style>
     div {
-        background-size: auto 100%;
+        background-size: cover;
+    }
+
+    .image {
+        transition: background-image ease 3s
     }
 </style>
