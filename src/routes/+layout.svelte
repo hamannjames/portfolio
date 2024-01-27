@@ -2,9 +2,29 @@
 	import Header from './Header.svelte';
 	import './styles.css';
     import '../app.css';
-  import Footer from './Footer.svelte';
-  import SpiralSvg from '$lib/components/SpiralSvg.svelte';
+  	import Footer from './Footer.svelte';
+  	import SpiralSvg from '$lib/components/SpiralSvg.svelte';
+	import { MetaTags } from 'svelte-meta-tags';
+    import { page } from '$app/stores';
+
+	export let data;
+
+	$: metaTags = {
+        titleTemplate: '%s - James Hamann, Developer',
+        description: 'Developer, designer, friend. Want to build a cool app? Hit me up, let\'s build it.',
+        canonical: `${$page.url.href}`,
+        ...$page.data.metaTagsChild,
+        openGraph: {
+            url: `${$page.url.href}`,
+            locale: 'en-US',
+            siteName: 'James Hamann, Developer',
+            images: [{url: 'https://jameshamann.me/og_image.jpg', width: 600, height: 397, alt: 'Kinder Painting'}],
+            ...$page.data.metaTagsChild.openGraph
+        }
+    }
 </script>
+
+<MetaTags {...metaTags} />
 
 <svelte:head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
