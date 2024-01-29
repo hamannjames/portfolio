@@ -13,7 +13,7 @@
         ['🔍 Snohomish County Valley Search and Rescue (Custom Wordpress Theme)', 'https://scvsar.org/'],
         ['🛥️ Jacobsen\'s Marine (Custom Wordpress Theme)', 'https://www.jacobsensmarine.com/'],
         ['🫱🏽‍🫲🏾 UWKC Free Tax Site Locator (in season January - July, Custom Wordpress Theme, Leafbox, Bing Maps, vanilla JS)', 'https://www.uwkc.org/need-help/tax-help/'],
-        ['📈 US Senate Stock Transaction Tracker (alpha, Laravel, Livewire)'],
+        ['📈 US Senate Stock Transaction Tracker (alpha, Laravel, Livewire)', 'https://github.com/hamannjames/stock-sentinel-2'],
         ['🏋🏻 Gymbro weight lifting app (alpha, React Native)'],
     ]
 
@@ -55,4 +55,17 @@
         {/if}
     </div>
     {/if}
+</section>
+
+<section class="flex flex-col p-4 wrap gap-24">
+    <div class="text-2xl text-center">
+        Some cool things I've worked on I cannot share a link to. Privacy disclosures, private repos. Typical things. I can talk about some of them though! Feel free to ask me about:
+    </div>
+
+    <ul class="text-lg space-y-4 text-right lg:text-center">
+        <li>A heavy cargo shipping order web app</li>
+        <li>A money saver mobile phone app using plaid and solid, fintech</li>
+        <li>A website for displaying and selling rare coins and jewelry</li>
+        <li>An SEO auditing tool using Open AI! (not for skynet)</li>
+    </ul>
 </section>
