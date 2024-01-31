@@ -9,6 +9,7 @@
     const items = [
         ['❤️ United Way of King County (React, jQuery, Custom Wordpress Theme)', 'https://www.uwkc.org'],
         ['📍 Bartell Drugs Store Locator (jQuery, Google Maps)', 'https://www.bartelldrugs.com/store-locator'],
+        ['🏦 Bank of Hawaii Hero and Navigation', 'https://boh.com'],
         ['🔨 Kinder Painting (Svelte)', 'https://www.kinderpainting.com'],
         ['🔍 Snohomish County Valley Search and Rescue (Custom Wordpress Theme)', 'https://scvsar.org/'],
         ['🛥️ Jacobsen\'s Marine (Custom Wordpress Theme)', 'https://www.jacobsensmarine.com/'],
@@ -45,7 +46,7 @@
                 y: '20vw'
             }}>
                 {#if item[1]}
-                <a class="text-red-300" href="{item[1] ?? '#'}">{item[0]}</a>
+                <a target="_blank" class="text-red-300" href="{item[1] ?? '#'}">{item[0]}</a>
                 {:else}
                 {item[0]}
                 {/if}
