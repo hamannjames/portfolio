@@ -30,7 +30,7 @@
 				<a href="https://www.linkedin.com/in/hamannjames/"><img src="{linkedin}" alt="Linked In"/></a>
 			</li>
 			<li>
-				<a href="https://www.linkedin.com/in/hamannjames/">#OpenToWork</a>
+				<a href="/James_Hamann_Resume_2024_Updated.pdf" target="james_resume_download">#OpenToWork</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
