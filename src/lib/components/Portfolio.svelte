@@ -14,7 +14,7 @@
         ['🔍 Snohomish County Valley Search and Rescue (Custom Wordpress Theme)', 'https://scvsar.org/'],
         ['🛥️ Jacobsen\'s Marine (Custom Wordpress Theme)', 'https://www.jacobsensmarine.com/'],
         ['🫱🏽‍🫲🏾 UWKC Free Tax Site Locator (in season January - July, Custom Wordpress Theme, Leafbox, Bing Maps, vanilla JS)', 'https://www.uwkc.org/need-help/tax-help/'],
-        ['📈 US Senate Stock Transaction Tracker (alpha, Laravel, Livewire)', 'https://github.com/hamannjames/stock-sentinel-2'],
+        ['📈 US Senate Stock Transaction Tracker (alpha, Laravel, Livewire)', 'https://www.stocksentinel.app'],
         ['🏋🏻 Gymbro weight lifting app (alpha, React Native)'],
     ]
 
