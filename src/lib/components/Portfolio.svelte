@@ -10,11 +10,11 @@
         ['❤️ United Way of King County (React, jQuery, Custom Wordpress Theme)', 'https://www.uwkc.org'],
         ['📍 Bartell Drugs Store Locator (jQuery, Google Maps)', 'https://www.bartelldrugs.com/store-locator'],
         ['🏦 Bank of Hawaii Hero and Navigation', 'https://boh.com'],
+        ['📈 US Senate Stock Transaction Tracker (alpha, Next.js, Azure Cosmos DB, Python scraper)', 'https://www.stocksentinel.app'],
         ['🔨 Kinder Painting (Svelte)', 'https://www.kinderpainting.com'],
         ['🔍 Snohomish County Valley Search and Rescue (Custom Wordpress Theme)', 'https://scvsar.org/'],
         ['🛥️ Jacobsen\'s Marine (Custom Wordpress Theme)', 'https://www.jacobsensmarine.com/'],
         ['🫱🏽‍🫲🏾 UWKC Free Tax Site Locator (in season January - July, Custom Wordpress Theme, Leafbox, Bing Maps, vanilla JS)', 'https://www.uwkc.org/need-help/tax-help/'],
-        ['📈 US Senate Stock Transaction Tracker (alpha, Laravel, Livewire)', 'https://www.stocksentinel.app'],
         ['🏋🏻 Gymbro weight lifting app (alpha, React Native)'],
     ]
 
